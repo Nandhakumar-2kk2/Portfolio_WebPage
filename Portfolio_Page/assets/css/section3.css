@@ -1,0 +1,182 @@
+.sec3{
+    height: 100vh;
+    /* background-color: black;
+    color: aliceblue; */
+    text-align: center;
+}
+
+.sec3 h3{
+    text-align: center;
+    padding-top: 100px;
+    transition:2s;
+    animation:ourservice;
+    animation-duration:5s;
+    animation-delay:1s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-direction: alternate;
+}
+
+@keyframes ourservice{
+    from{
+        transform:translate(50px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+.sec3 h3:hover{
+    text-shadow: 4px 1px 3px rgba(0,0,0,0.6);
+    transform: scale(1.2);
+    transition: 2s;
+}
+.sec3 h3 span{
+    color:rgb(255, 166, 0);
+}
+
+.sec3 h5{
+    text-align: center;
+    color: rgb(255, 166, 0);
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+
+#s3row1{
+    margin-top: 100px;
+}
+/* #cardcolor1:hover{
+    background-color: rgb(255, 166, 0);
+} */
+#cardcolor1{
+    background-color: transparent;
+    box-shadow: 1px 4px 21px 0px rgba(231,166,26,1);
+    transition:3s;
+    border-radius:10px;
+    animation:cardcolor1;
+    animation-duration:5s;
+    animation-delay:1s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-direction: alternate;
+}
+
+@keyframes cardcolor1{
+    from{
+        transform:translate(-50px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+#cardcolor1:hover{
+    transform:scale(1.2);
+    transition:3s;
+    box-shadow: 1px 4px 21px 0px rgb(231, 96, 6);
+    border-radius:10px;
+}
+#cardcolor2{
+    background-color: transparent;
+    box-shadow: 1px 4px 21px 0px rgba(231,166,26,1);
+    transition:3s;
+    border-radius:10px;
+    animation:cardcolor2;
+    animation-duration:5s;
+    animation-delay:1s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-direction: alternate;
+}
+
+@keyframes cardcolor2{
+    from{
+        transform:translateY(50px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+
+
+#cardcolor2:hover{
+    transform:scale(1.2);
+    transition:3s;
+    box-shadow: 1px 4px 21px 0px rgb(231, 96, 6);
+    border-radius:10px;
+}
+#cardcolor3{
+    background-color:transparent;
+    box-shadow: 1px 4px 21px 0px rgba(231,166,26,1);
+    transition:3s;
+    border-radius:10px;
+    animation:cardcolor3;
+    animation-duration:5s;
+    animation-delay:1s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-direction: alternate;
+}
+
+@keyframes cardcolor3{
+    from{
+        transform:translate(50px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+
+#cardcolor3:hover{
+    transform:scale(1.2);
+    transition:3s;
+    box-shadow: 1px 4px 21px 0px rgb(231, 96, 6);
+    border-radius:10px;
+}
+
+.s3hover{
+    color: rgb(255, 166, 0);
+}
+
+/* section-3 media queryes */
+
+@media screen and (max-width:769px){
+
+  .sec3{
+    text-align: center;
+    padding-top: 700px;
+}
+
+#cardcolor1{
+    background-color: transparent;
+    box-shadow: 1px 4px 21px 0px rgba(231,166,26,1);
+    transition:3s;
+    border-radius:10px;
+    margin-left:75px;
+    margin-bottom: 40px;
+}
+#cardcolor2{
+    background-color: transparent;
+    box-shadow: 1px 4px 21px 0px rgba(231,166,26,1);
+    transition:3s;
+    border-radius:10px;
+    margin-left:75px;
+    margin-bottom: 40px;
+}
+#cardcolor3{
+    background-color: transparent;
+    box-shadow: 1px 4px 21px 0px rgba(231,166,26,1);
+    transition:3s;
+    border-radius:10px;
+    margin-left:75px;
+
+}
+
+
+
+
+}
+

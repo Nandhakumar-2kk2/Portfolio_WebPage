@@ -1,0 +1,314 @@
+.bdy{
+    margin: 0;
+    padding: 0;
+    font-family: "Trirong", serif;
+    font-weight:800;
+    background-color:white;
+    transition: 5s;
+    /* color: white; */
+}
+
+
+/* navbar changes */
+
+.navchange{
+    background-color:white;
+    color: black;
+    border-bottom: 3px solid rgb(255, 166, 0);
+    border-top: 1px solid rgb(255, 166, 0);
+    box-shadow: 3px 25px 40px 0px rgba(143, 139, 139, 0.45);
+    transition:5s;
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+#navhome{
+    color:black;
+}
+#navabout{
+    color:black;
+}
+#navserv{
+    color:black;
+}
+#navreview{
+    color:black;
+}
+#navcontact{
+    color:black;
+}
+
+
+.keep{
+    color: rgb(255, 166, 0);
+}
+
+/* navbar hover */
+#navhover li a{
+    transition:2s;
+}
+
+#navhover li a:hover{
+    color: rgb(255, 166, 0);
+    text-shadow:3px 0px 5px rgb(255, 166, 0);
+    transition:1s;
+    transform:scale(1.1);
+
+}
+
+/* section one */
+.section1{
+    background-color:transparent;
+    border-bottom: 5px solid rgb(255, 166, 0);
+    /* color: aliceblue; */
+    margin-top:54px;
+    height: 100vh;
+}
+
+.s1col1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.s1col1 span{
+    color:rgb(255, 166, 0);
+}
+
+.s1ul{
+    margin-left:-50px;
+}
+
+.s1ul li{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    margin: 8px;
+    border: 2px solid  rgb(255, 166, 0) ;
+    border-radius:50%;
+    padding: 7px 5px 15px 5px;
+    box-shadow: 3px 2px 21px 0px rgba(252,127,3,1);
+    transition:3s;
+}
+
+/* hover method */
+
+.s1ul li:hover{
+    background-color: rgb(255, 166, 0);
+    transition:2s;
+    transform:scale(1.2);
+}
+
+#git:hover{
+    color:rgb(58, 16, 58);
+}
+#inst:hover{
+    color: rgb(224, 14, 112);
+}
+#what:hover{
+    color: green;
+}
+#face:hover{
+    color: rgb(0, 153, 255);
+}
+
+
+.s1ul li i{
+    color:rgb(255, 166, 0);
+}
+
+
+
+
+
+/* section one second column */
+
+.colorbox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 166, 0);
+    margin-top: 31px;
+    margin-left: 250px;
+    border-radius:70px;
+    animation: colorboxstyle;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+    animation-delay:1s;
+    animation-direction:alternate;
+}
+
+/* @keyframes colorboxstyle{
+    from{
+        transform:translateY(-80px);
+        transform:scale(0.5);
+    }
+    to{
+        transform:translateY(20px);
+        transform:scale(1.2);
+    }
+} */
+
+
+@keyframes colorboxstyle{
+    0%{
+        transform:translateY(-80px);
+        transform:scale(0.5);
+        border-radius:10;
+        background:linear-gradient(to bottom right,#FF4E50,#F9D423);
+        box-shadow: 1px 4px 25px 15px rgb(231, 176, 6);
+    }
+    25%{
+        transform:translateY(-75px) rotate(90deg);
+        transform:scale(0.7);
+        border-radius:15;
+        background:linear-gradient(to bottom left,#FF4E50,#F9D423);
+        box-shadow: 1px 4px 20px 10px rgb(231, 156, 6);
+
+    }
+    50%{
+        transform:translateY(-35px) rotate(360deg);
+        transform:scale(0.9);
+        border-radius:35;
+        background:linear-gradient(to top left,#FF4E50,#F9D423);
+        box-shadow: 1px 4px 15px 7px rgb(231, 136, 6);
+    }
+    75%{
+        transform:translateY(-15px) rotateX(360deg);
+        transform:scale(1);
+        border-radius:53;
+        background:linear-gradient(to top right,#FF4E50,#F9D423);
+        box-shadow: 1px 4px 10px 5px rgb(231, 156, 6);
+    }
+    100%{
+        transform:translateY(20px) rotate(360deg);
+        transform:scale(1.1);
+        border-radius:70;
+        background:radial-gradient(#FF4E50,#F9D423);
+        box-shadow: 1px 4px 5px 0px rgb(231, 176, 6);
+
+    }
+}
+
+#navbaricon{
+    animation:navbaricon;
+    animation-duration: 10s;
+    animation-delay:1s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode:both;
+    animation-direction:alternate;
+}
+
+@keyframes navbaricon {
+    from{
+        /* transform:translate(-50px) scaleZ(1.1); */
+    } 
+    to{
+        transform:scale(-1.1);
+    }
+    
+}
+
+
+.colorbox:hover{
+    transform: rotate(180deg);
+    transition: 3s;
+}
+
+.s1col2 img{
+    position: absolute;
+    margin-top: -250px;
+    margin-left:86px;
+}
+#s1bulb{
+    margin-left: 5px;
+    animation: bulb;
+    transition: 5s;
+    animation-duration:5s;
+    animation-timing-function:ease;
+    animation-delay:1s;
+    animation-direction:alternate;
+}
+
+@keyframes bulb {
+    from{
+        transform:translateY(-50px);
+    }
+    to{
+        transform:translate(0px);
+    }
+    
+}
+
+.s2col1 p span{
+    color: rgb(255, 166, 0);
+}
+
+
+/* @media quries home section */
+
+
+@media screen and (max-width:769px){
+
+  .section1{
+    background-color:transparent;
+    border-bottom-color: transparent;
+    /* color: aliceblue; */
+}
+.bdy{
+    height:3000px;
+}
+.s1ul{
+    font-size:10px;
+    padding-right:-100px;
+    padding-bottom: 20px;
+}
+
+.s1ul li{
+    padding: 10px 5px 20px 5px;
+}
+
+.s1col2 img{
+    position: absolute;
+    margin-top: -250px;
+    margin-left:-75px;
+}
+
+.colorbox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 166, 0);
+    margin-top: 31px;
+    margin-left: 90px;
+    border-radius:70px;
+}
+
+}
+
+
+/* navbar section one use @media queryes */
+
+@media screen and (max-width:769px){
+    #togglewhite{
+        margin-left:-160px;
+        
+    }
+
+    #toggledark{
+        margin-right:20px;
+    }
+
+    #s1icon{
+        margin-left:-40px;
+    }
+
+    #s1navbarbtn{
+        margin-left:100px;
+    }
+}
+
+
+
+
